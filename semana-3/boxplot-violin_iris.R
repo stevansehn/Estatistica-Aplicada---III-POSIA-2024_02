@@ -28,7 +28,7 @@ ggplot(iris_setosa, aes(x = Species, y = Sepal.Length, fill = Species)) +
   annotate("text", x = 1.2, y = stats[5] + 0.05, label = "Upper Extreme", color = "blue", hjust = 0) +
   xlab("Species") + 
   ylab("Sepal Length") +
-  ggtitle("Sepal Lengths of Iris-setosa") +
+  ggtitle("Sepal Lengths of Iris setosa") +
   theme_minimal() + 
   theme(legend.position = "none", 
         plot.title = element_text(hjust = 0.5))
