@@ -21,11 +21,11 @@ ggplot(iris_setosa, aes(x = Species, y = Sepal.Length, fill = Species)) +
   geom_hline(yintercept = stats[3], linetype = "dashed", color = "blue") +
   geom_hline(yintercept = stats[4], linetype = "dashed", color = "blue") +
   geom_hline(yintercept = stats[5], linetype = "dashed", color = "blue") +
-  annotate("text", x = 1.2, y = stats[1] + 0.05, label = "Upper Extreme", color = "blue", hjust = 0) +
-  annotate("text", x = 1.2, y = stats[2] + 0.05, label = "Upper Fourth", color = "blue", hjust = 0) +
+  annotate("text", x = 1.2, y = stats[1] + 0.05, label = "Lower Extreme", color = "blue", hjust = 0) +
+  annotate("text", x = 1.2, y = stats[2] + 0.05, label = "Lower Fourth", color = "blue", hjust = 0) +
   annotate("text", x = 1.2, y = stats[3] + 0.05, label = "Median", color = "blue", hjust = 0) +
-  annotate("text", x = 1.2, y = stats[4] + 0.05, label = "Lower Fourth", color = "blue", hjust = 0) +
-  annotate("text", x = 1.2, y = stats[5] + 0.05, label = "Lower Extreme", color = "blue", hjust = 0) +
+  annotate("text", x = 1.2, y = stats[4] + 0.05, label = "Upper Fourth", color = "blue", hjust = 0) +
+  annotate("text", x = 1.2, y = stats[5] + 0.05, label = "Upper Extreme", color = "blue", hjust = 0) +
   xlab("Species") + 
   ylab("Sepal Length") +
   ggtitle("Sepal Lengths of Iris-setosa") +
