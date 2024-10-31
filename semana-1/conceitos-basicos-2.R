@@ -38,7 +38,7 @@ for (i in 1:32)
 print(subset(mtcars, mpg > 20)$hp)
 
 # Idem com o pacote dplyr
-install.packages("dplyr")
+# install.packages("dplyr")
 library(dplyr)
 
 mtcars %>%

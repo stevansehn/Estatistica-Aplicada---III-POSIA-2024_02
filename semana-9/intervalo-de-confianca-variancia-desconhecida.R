@@ -74,8 +74,33 @@ desvio_padrao
 # tc * desvio padrão / raiz quadrada do tamanho da amostra
 
 tc <- 2.262 # tabela t-Student
+tc * desvio_padrao / sqrt(n)
+
 ICsoma = x + tc * desvio_padrao / sqrt(n)
 ICsoma
 
 ICsubstracao = x - tc * desvio_padrao / sqrt(n)
 ICsubstracao
+
+# Solução usando t.test()
+
+amostras = c(9, 8, 12, 7, 9, 6, 11, 6, 10, 9)
+amostras
+
+boxplot(amostras)
+
+## método padrão
+
+### Teste #1 - H0: mu = 0 
+t.test(x=amostras, y = NULL,
+       alternative = c("two.sided", "less", "greater"),
+       mu = 0, paired = FALSE, var.equal = FALSE,
+       conf.level = 0.95)
+
+### Teste #2 - H0: mu = 2 
+t.test(amostras, mu=2)
+
+### Teste #3 - H0: mu = 8.7 
+t.test(amostras, mu=8.7)
+
+
